@@ -22,7 +22,7 @@ interface CerealStorage {
      * @param amount количество добавляемой крупы
      * @return количество оставшейся крупы если контейнер заполнился
      * @throws IllegalArgumentException если передано отрицательное значение
-     * @throws IllegalStateException если хранилище не позволяет разместить ещё один контейнер для новой крупы
+         * @throws IllegalStateException если хранилище не позволяет разместить ещё один контейнер для новой крупы
      */
     fun addCereal(cereal: Cereal, amount: Float): Float
 
@@ -45,7 +45,7 @@ interface CerealStorage {
      * @param cereal крупа, количество которой нужно узнать
      * @return количество крупы, которое хранится в контейнере или 0 если контейнера нет
      */
-    fun getAmount(cereal: Cereal): Float
+    fun getAmount(cereal: Cereal): Float?
 
     /**
      * @param cereal крупа, для которой нужно проверить доступное место в контейнере
