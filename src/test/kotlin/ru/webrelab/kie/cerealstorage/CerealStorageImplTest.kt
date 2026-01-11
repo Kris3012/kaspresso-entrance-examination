@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class CerealStorageImplTest {
 
-    private val storage = CerealStorageImpl(10f, 20f)
+    private val storage = CerealStorageImpl(10f, 22f)
 
     //getAmount
     @Test

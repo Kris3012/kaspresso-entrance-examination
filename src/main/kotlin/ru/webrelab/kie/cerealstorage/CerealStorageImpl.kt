@@ -11,7 +11,7 @@ class CerealStorageImpl(
         val space = containerCapacity - currentAmount
         val addedAmount = if (amount <= space) amount else space
         val leftover = if (amount <= space) 0f else amount - space
-        val maxSpace = storageCapacity / containerCapacity
+        val maxSpace = (storageCapacity / containerCapacity).toInt()
         if (storage[cereal] == null && storage.size >= maxSpace) {
             throw IllegalStateException("Нет места для нового контейнера")
         }
